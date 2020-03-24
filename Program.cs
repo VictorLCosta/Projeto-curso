@@ -1,4 +1,5 @@
 ﻿using System;
+using ChessSystem.Tabuleiro;
 
 namespace ChessSystem
 {
@@ -6,7 +7,11 @@ namespace ChessSystem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Table tab = new Table(8, 8);
+
+            Screen.PrintTable(tab);
+
+            new Table(9, 9);
         }
     }
 }
